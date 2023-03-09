@@ -7,7 +7,7 @@
     "node": "16.19.1"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run watch\" & echo \"/* /index.html 200\" > dist/_redirects",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
     "watch": "parcel watch static/index.html --no-source-maps",
     "serve": "node server.js"
   },
