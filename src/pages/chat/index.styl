@@ -1,0 +1,136 @@
+.chat-page__wrapper
+    display: flex
+    height: 100vh
+
+.chat-page__aside-block
+    flex-basis: 25%
+    display: flex
+    flex-direction: column
+    border-right: 1px solid #EAEAEA
+
+.chat-page__list
+    flex-grow: 1
+
+.chat-page
+    flex-basis: 75%
+    display: flex
+    flex-direction: column
+
+    &__user-info-wrapper
+        padding: 10px 31px 10px 20px
+    &__chat
+        flex-grow: 1
+    &__form-wrapper
+        padding: 10px
+
+.chat-page__navigation
+    padding: 10px
+    border-bottom: 1px solid #EAEAEA
+    height: 3.25rem
+    display: flex
+    &-input
+        margin-left: 10px 
+        background-color: #EAEAEA 
+
+.chat-page__form-input
+    margin-left: 10px 
+
+.chat-page__form-wrapper
+    height: 3.25rem
+    border-top: 1px solid #EAEAEA
+    display: flex
+
+.chat-page__button
+    border: none
+    background: none
+    width: 2rem
+    height: 2rem
+    padding: 0
+    &_blue
+        background-color: #3369F3 
+        border-radius: 8px
+        margin-left: 10px
+    & > svg 
+        display: block
+        width: 2rem
+        height: 2rem
+
+.chat-page__user
+    &-info-wrapper
+        height: 3.25rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid #EAEAEA
+
+    &-name
+        font-size: 0.813rem
+        font-weight 600
+        line-height: 1
+        margin-block-start: 0
+        margin-block-end: 0
+
+    &-status
+        font-size 0.75rem
+        line-height: 1.25
+        color: #3369F3
+        margin-top: 4px
+
+    &-options
+        width: 3px
+        height: 15px
+        & > svg
+            display: block
+            width: 3px
+            height: 15px
+
+.chat-page__list
+    list-style: none
+    margin-block-start: 0
+    margin-block-end: 0
+    padding-inline-start: 0
+
+    &-item
+        padding: 12px 10px  
+        display: flex
+        align-items: flex-start
+        position: relative
+
+.chat-page__chat-avatar
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background-color: #EAEAEA 
+    margin-right: 10px
+
+.chat-page__chat-name
+    font-size: 0.813rem
+    font-weight 600
+    line-height: 1
+    margin-block-start: 0
+    margin-block-end: 0
+.chat-page__chat-message
+    font-size 0.75rem
+    line-height: 1.25
+    color: #3369F3
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-top: 4px
+.chat-page__chat-time
+    font-size: 9px;
+    line-height: 1.44
+    text-align: right;
+    margin-left: auto
+    color: #999999;
+.chat-page__chat-message-count
+    position: absolute
+    bottom: 12px
+    right: 10px
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #3369F3
+    color: #FFFFFF
+    font-size: 11px
+    line-height: 20px
+    text-align: center

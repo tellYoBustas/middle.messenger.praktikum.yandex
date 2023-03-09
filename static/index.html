@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="./fonts/Inter-Medium.woff2" as="font" />
+    <link rel="preconnect" href="./fonts/Inter-SemiBold.woff2" as="font" />
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        src: url("./fonts/Inter-Medium.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        src: url("./fonts/Inter-SemiBold.woff2") format("woff2");
+      }
+
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 100%;
+
+        margin: 0;
+
+        background-color: #ffffff;
+        color: #1d1d1d;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      button {
+        font-family: inherit;
+        font-weight: 500;
+      }
+
+      h2 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      .modal {
+        display: block;
+      }
+
+      .modal_hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      var parcelRequire;
+    </script>
+    <title>Messenger</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="../src/pages/index.js"></script>
+  </body>
+</html>
