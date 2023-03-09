@@ -1,7 +1,7 @@
 const express = require("express")
 const fs = require("fs")
 const app = express()
-const PORT = 9000
+const PORT = 3000
 
 fs.mkdirSync("dist", (error) => {
     if (error) {
