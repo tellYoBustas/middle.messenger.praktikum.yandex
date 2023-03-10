@@ -1,0 +1,181 @@
+.profile-page__wrapper
+    display: flex
+    height: 100vh
+
+.profile-page__navigation
+    flex-basis: 4rem
+    background-color: #FBFBFB
+
+    border-right: 1px solid #EAEAEA
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.profile-page__navigation-button
+    border: none
+    background: none
+    width: 2rem
+    height: 2rem
+    padding: 0
+    background-color: #3369F3 
+    border-radius: 50%
+    display: block
+    margin: 0 auto
+    & > svg 
+        transform: rotate(180deg)
+        display: block
+        width: 2rem
+        height: 2rem
+
+.profile-page__modal
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate3d(-50%, -50%, 0)
+    width 100%
+    height: 100%
+
+    z-index: 1000
+
+    &-title
+        font-size: 0.938rem
+        line-height: 1.33
+        text-align: center
+        margin-block-start: 0
+        margin-block-end: 0
+        margin-bottom: 2.625rem
+
+    &-file
+        cursor: pointer
+        & > input 
+            display: none
+        & > p
+            color: #3369F3
+            text-align: center
+            text-decoration-line: underline
+            font-size 0.75rem
+            line-height: 1.33
+        &:hover
+            & > p
+                text-decoration-line: none
+
+        margin-bottom: 2.625rem
+
+
+    &-background
+        background-color: #1D1D1D
+        opacity: 0.4
+        width 100%
+        height: 100%
+
+    &-content
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate3d(-50%, -50%, 0)
+        padding: 2.5rem 1.875rem
+        border-radius: 12px
+        background-color: #FFFFFF
+        width: 21.25rem
+        z-index: 1001
+
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &-form
+        width 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.profile-page
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 31.875rem
+    transform: translate3d(-2rem, 0, 0)
+
+.profile-page__name
+    font-weight: 600
+    text-align: center
+    font-size: 1rem
+    line-height: 1
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 3rem
+
+.profile-page__link
+    display: inline-block
+    width: 100%
+    font-size: 0.813rem
+    line-height: 1
+    padding: 0.77em 0
+    &:not(:last-child)
+        border-bottom: 1px solid #EAEAEA
+
+.profile-page__avatar-button
+    width: 8.125rem
+    height: 8.125rem
+    margin-bottom: 1.25rem
+    border-radius: 50%
+    border: none
+    cursor: pointer 
+    background-color: #EAEAEA
+    padding: 0
+    position: relative
+
+    &_editable
+        margin-bottom: 5.5rem
+
+    &-text
+        position: relative
+        z-index: 1
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0
+        color: #FFFFFF
+        font-size: 0.813rem
+        line-height: 1.08
+        background-color: transparent
+        opacity: 0
+        border-radius: 50%
+        transition-duration: 0.3s 
+
+    &:hover
+        .profile-page__avatar-button-text
+            background-color: rgba(29, 29, 29, 0.5)
+            opacity: 1
+
+    & > svg
+        // z-index: 0
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate3d(-50%, -50%, 0)
+        width: 2.5rem
+        height: 2.5rem
+
+.profile-page__form 
+    width: 100%
+    min-height: 18.5rem
+
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &-button
+        margin-top: auto
+
+    & > .input-settings-field:last-child 
+        margin-bottom: 3rem
+
+    & > .input-settings-field_last-child > .input-settings-field__input
+        border-bottom: none 

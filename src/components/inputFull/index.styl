@@ -1,0 +1,22 @@
+.input-full
+    width: 100%
+    padding: 0.5rem 1rem
+    border: 0
+    outline: none
+    border-radius: 0
+    appearance: none
+    font-size: 0.75rem
+    line-height: 1
+    font-weight: 500
+    border: 1px solid #EAEAEA
+    border-radius: 8px
+    transition: border-color .3s
+
+    &::placeholder
+        color: #999999
+
+    &:focus
+        border-color: #3369F3
+
+    &:not(:focus):not(:placeholder-shown)
+        border-color: #3369F3
