@@ -5,7 +5,9 @@
     "node": "16.19.1"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run build\"",
+    "build": "parcel build static/index.html",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
     "watch": "parcel watch static/index.html",
     "serve": "node server.js"
   },
